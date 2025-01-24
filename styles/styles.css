@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+:root { /* definindo elemento global */
+    --cor-primaria: #0f0e0e;
+    --cor-secundaria: #eeeeee;
+    --cor-terciaria: #8b9a46;
+    --cor-hover: #541212;
+
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: 'Montserrat', serif;
+    --fonte-terciaria: "Roboto Condensed", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria); /* COR DE FUNDO */
+    color: var(--cor-secundaria); /* COR DO TEXTO */
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%; /* SUPERIOR - 2% | DIREITO - 0% | INFERIOR - 0% | ESQUERDO - 15 */
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    /* margin: 10% 15%;  PRIMEIRO VALOR SEMPRE VAI SER DO EIXO VERTICAL E O SEGUNDO DO HORIZONTAL */
+    padding: 5% 15%;
+    display: flex;
+    align-items: center; /* ATUA NO ELEMENTO PAI COM A RESPONSABILIDADE DE ESPAÇAMENTO DOS ELEMENTOS FILHOS */
+    justify-content: space-between; /* ATUA NO ELEMENTO PAI COM A RESPONSABILIDADE DE ESPAÇAMENTO DOS ELEMENTOS FILHOS */
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: initial;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__titulo__destacado {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-weight: bold; /*  TEXTO EM NEGRITO */
+    font-size: 30px;
+    font-family: var(--fonte-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid var(--cor-terciaria); /* BORDA - solid , dotted , dashed , double , groove , ridge , inset , outset , none , hidden. */
+    width: 378px;
+    text-align: center; /* ALINHAR OS TEXTOS NO CENTRO */
+    border-radius: 8px; /* Ajuste da borda, para deixar mais redonda */  
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0; /* PRIMEIRO VALOR SEMPRE VAI SER DO EIXO VERTICAL E O SEGUNDO DO HORIZONTAL */
+    text-decoration: none; /* TIRANDO LINHA DE LINK DA TAG <a> (ANCORA) */
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__link__image {
+    width: 28px;
+    padding: 0%;
+}
+
+.apresentacao__links__link:hover{ /* TUDO QUE ESTIVER DENTRO DO "HOVER" VAI SER ESTILIZADO QUANDO O MOUSE PASSAR EM CIMA */
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-terciaria);
+}
+
+.image__ailton {
+    width: 516px;
+    height: 77vh;
+    border-radius: 35px; /* Ajuste da borda, para deixar mais redonda */    
+}
+
+.image__engeman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.image__engeman__confra {
+    width: 516px;
+    height: 77vh;
+    border-radius: 35px;
+}
+
+.image__itens {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 38px;
+}
+
+.image__itens__icones {
+    width: 70px;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}

@@ -5,10 +5,10 @@
 
 
 :root { /* definindo elemento global */
-    --cor-primaria: #0f0e0e;
+    --cor-primaria: #09122C;
     --cor-secundaria: #eeeeee;
     --cor-terciaria: #8b9a46;
-    --cor-hover: #541212;
+    --cor-hover: #4635B1;
 
     --fonte-primaria: "Krona One", serif;
     --fonte-secundaria: 'Montserrat', serif;
@@ -49,6 +49,7 @@ body {
     display: flex;
     align-items: center; /* ATUA NO ELEMENTO PAI COM A RESPONSABILIDADE DE ESPAÇAMENTO DOS ELEMENTOS FILHOS */
     justify-content: space-between; /* ATUA NO ELEMENTO PAI COM A RESPONSABILIDADE DE ESPAÇAMENTO DOS ELEMENTOS FILHOS */
+    gap: 50px;
 }
 
 .apresentacao__conteudo {
@@ -56,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    text-align: initial;
+    text-align: center;
 }
 
 .apresentacao__conteudo__titulo {
@@ -122,22 +123,9 @@ body {
 }
 
 .image__ailton {
-    width: 516px;
+    width: 486px;
     height: 77vh;
     border-radius: 35px; /* Ajuste da borda, para deixar mais redonda */    
-}
-
-.image__engeman {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5vh;
-}
-
-.image__engeman__confra {
-    width: 516px;
-    height: 77vh;
-    border-radius: 35px;
 }
 
 .image__itens {
